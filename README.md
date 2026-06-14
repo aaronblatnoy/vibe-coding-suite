@@ -1,4 +1,4 @@
-# Vibe Coding Suite
+# Aaron's Vibe Coding Suite
 
 Hey everyone, my name is Aaron! I'm a student at NYU and a self-proclaimed vibe coding extraordinaire! I haven't had the chance to open-source most of my projects because I mainly deal with protected data, but I wanted to share my vibe coding suite.
 
