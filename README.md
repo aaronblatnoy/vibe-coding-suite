@@ -55,7 +55,7 @@ Verifies a claim or work product to high confidence using **two genuinely indepe
 
 ### Ozempic Protocol
 
-The workflow version of the Ozempic Protocol agent. Maps a bounded surface for bloat, fans out **real parallel auditors** (one per offender), dedupes findings, ranks by impact, and splits tactical vs. architectural. Optionally ships the safe tactical trims automatically.
+Maps a bounded surface for bloat, fans out **real parallel auditors** (one per offender), dedupes findings, ranks by impact, and splits tactical vs. architectural. Optionally ships the safe tactical trims automatically.
 
 **Phases:** Map → Audit (parallel) → Synthesize → Apply (optional)
 
