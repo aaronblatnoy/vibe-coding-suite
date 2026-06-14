@@ -8,15 +8,6 @@ Hi my name is Aaron! I'm a student at NYU and a self-described vibe coding extra
 
 Agents are subagents you drop into `~/.claude/agents/`. Claude Code picks them up automatically and routes tasks to them based on their descriptions.
 
-### Ozempic Protocol
-> *"Put X on Ozempic."*
-
-Finds and removes bloat from any artifact that can be measured — codebases, prompts, knowledge trees, docs, configs, agent definitions. The key distinction: it operates by **measurement, not vibe**. It maps the target, ranks the biggest offenders by bytes/lines/tokens, and separates tactical trims (remove redundancy, same shape) from architectural slim-downs (change shape so the bloat can't come back). Ships the small wins directly; hands off the structural ones to a phase plan.
-
-**Invoke:** "Put my system prompt on Ozempic" or "Run an Ozempic pass on the auth module."
-
----
-
 ### Phase Plan Architect
 
 Transforms a high-level feature request, augmentation, or coding instruction into a thorough multi-phase buildout plan saved as a `.txt` file. It reads the codebase first, understands the architecture, and produces a plan so detailed that implementation becomes mechanical. It does **not** write code — it writes the plan that makes writing code easy.
