@@ -1,6 +1,6 @@
 # Vibe Coding Suite
 
-Hey everyone, my name is Aaron! I'm a student at NYU and a self-described vibe coding extraordinaire! I haven't had the chance to open-source most of my projects because I mainly deal with protected data, but I wanted to share my vibe coding suite, which consists of several subagents and workflows. Godspeed!
+Hey everyone, my name is Aaron! I'm a student at NYU and a self-proclaimed vibe coding extraordinaire! I haven't had the chance to open-source most of my projects because I mainly deal with protected data, but I wanted to share my vibe coding suite. This suite contains two types of tools: agents, which are specialized workers who excel at some specific task (most of my subagents are projet level, so they are not here), and workflows, which coordinate multiple agents working together to tackle bigger, more complex jobs. Feel free to use this suite for your own development. Godspeed!
 
 This suite contains two types of tools: agents, which are specialized workers who excel at some specific task (most of my subagents are project level, so they are not here), and workflows, which coordinate multiple agents working together to tackle bigger, more complex jobs.
 
@@ -48,7 +48,7 @@ Verifies a claim or work product to high confidence using **two genuinely indepe
 
 ---
 
-### Ozempic Protocol (Workflow)
+### Ozempic Protocol
 
 The workflow version of the Ozempic Protocol agent. Maps a bounded surface for bloat, fans out **real parallel auditors** (one per offender), dedupes findings, ranks by impact, and splits tactical vs. architectural. Optionally ships the safe tactical trims automatically.
 
