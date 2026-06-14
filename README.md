@@ -13,7 +13,7 @@ Feel free to use this suite for your own development. Godspeed!
 
 ## Agents
 
-Agents are subagents you drop into `~/.claude/agents/`. Claude Code picks them up automatically and routes tasks to them based on their descriptions.
+Agents are subagents you drop into `~/.claude/agents/`. Claude Code picks them up automatically and routes tasks to them based on their descriptions. These are generally Claude instances that are good at some very specific task. 
 
 ### Phase Plan Architect
 
