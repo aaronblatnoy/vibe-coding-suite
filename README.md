@@ -2,8 +2,10 @@
 
 Hey everyone, my name is Aaron! I'm a student at NYU and a self-proclaimed vibe coding extraordinaire! I haven't had the chance to open-source most of my projects because I mainly deal with protected data, but I wanted to share my vibe coding suite.
 
-**Agents** are specialized workers who excel at some specific task (most of my subagents are project level, so they are not here).
-**Workflows** coordinate multiple agents working together to tackle bigger, more complex jobs.
+This suite consists of the following two types of tools:
+
+- **Agents** — specialized workers who excel at some specific task (most of my subagents are project level, so they are not here).
+- **Workflows** — coordinate multiple agents working together to tackle bigger, more complex jobs.
 
 Feel free to use this suite for your own development. Godspeed!
 
