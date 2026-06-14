@@ -1,6 +1,6 @@
 # Aaron's Vibe Coding Suite
 
-Hey everyone, my name is Aaron! I'm a student at NYU and a self-proclaimed vibe coding extraordinaire! I haven't had the chance to open-source most of my projects because I mainly deal with protected data, but I do want to share my vibe coding suite.
+Hey everyone, my name is Aaron! I'm a student at NYU and a self-proclaimed vibe coder! I haven't had the chance to open-source most of my projects because I mainly deal with protected data, but I do want to share my vibe coding suite.
 
 This suite consists of the following two types of tools:
 
