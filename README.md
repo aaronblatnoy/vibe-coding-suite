@@ -1,6 +1,6 @@
 # Vibe Coding Suite
 
-Hi my name is Aaron! I'm a student at NYU and a self-described vibe coding extraordinaire! I haven't had the chance to open-source most of my projects because I mainly deal with protected data, but I wanted to share my vibe coding suite, which consists of several subagents and workflows with the community. Godspeed!
+Hey everyone, my name is Aaron! I'm a student at NYU and a self-described vibe coding extraordinaire! I haven't had the chance to open-source most of my projects because I mainly deal with protected data, but I wanted to share my vibe coding suite, which consists of several subagents and workflows with the community. Godspeed!
 
 ---
 
