@@ -41,7 +41,7 @@ Drives your running Safari browser from the terminal via `osascript` (AppleScrip
 
 ## Workflows
 
-Workflows are multi-agent orchestration scripts that live in `~/.claude/workflows/`. They fan out real, independent agents in parallel — not one model pretending to be many. Run them via the Workflow tool in Claude Code.
+Workflows are multi-agent orchestration scripts that live in `~/.claude/workflows/`. They can fan out real, independent agents in parallel — not one model pretending to be many. Run them via the Workflow tool in Claude Code.
 
 ### Audit Duo
 
