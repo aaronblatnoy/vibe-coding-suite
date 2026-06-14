@@ -7,7 +7,7 @@ This suite consists of the following two types of tools:
 - **Agents** — specialized workers who excel at some specific task (most of my subagents are project level, so they are not here).
 - **Workflows** — dynamic scripts coordinate multiple agents working together to tackle bigger, more complex jobs.
 
-Feel free to use this suite for your own development. Godspeed!
+Feel free to use this suite for your own development. Gdspeed!
 
 ---
 
