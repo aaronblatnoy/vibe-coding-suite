@@ -1,6 +1,6 @@
 export const meta = {
-  name: 'refractor-duo',
-  description: 'High-rigor paired refactor with two GENUINELY SEPARATE agents: a MAPPER finds every site (defs, refs, cross-refs, INDEX/frontmatter/imports/config), a BUILDER applies the change consistently, and an INDEPENDENT CHECKER re-scans from scratch to hunt every missed site / orphan caller / broken cross-ref and run the build — looping BUILDER↔CHECKER until clean. For renames, moves, signature changes, schema migrations.',
+  name: 'refractor-trio',
+  description: 'High-rigor paired refactor with three GENUINELY SEPARATE agents: a MAPPER finds every site (defs, refs, cross-refs, INDEX/frontmatter/imports/config), a BUILDER applies the change consistently, and an INDEPENDENT CHECKER re-scans from scratch to hunt every missed site / orphan caller / broken cross-ref and run the build — looping BUILDER↔CHECKER until clean. For renames, moves, signature changes, schema migrations.',
   whenToUse: 'Multi-file refactors where consistency matters and a missed reference breaks things — renames, moves, signature changes, schema/frontmatter migrations touching cross-references. Pass args.refactor (the change in plain words) + args.scope (paths/repo) + optional args.verify (a build/typecheck/test command) + optional args.maxRounds (default 3).',
   phases: [
     { title: 'Map', detail: 'find every site the change touches + a precise edit spec' },
