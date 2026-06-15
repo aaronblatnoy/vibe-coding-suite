@@ -48,6 +48,13 @@ When you split: emit an ORDERED set of scripts (`<plan-slug>-1-<group>.js`, `-2-
 4. **Use `schema` for anything you branch on** — findings, verdicts, pass/fail counts — so the JS, not a model, does the control flow (loops, conditionals, gating).
 5. **Resumability is built in.** The Workflow runtime journals each `agent()` call (resume via `resumeFromRunId`), so do NOT hand-roll a `.agent/buildout-progress.json`. Structure phases so a resumed run reuses cached completed phases.
 
+## Plan lifecycle (read from pending, archive on success)
+
+Plans live in the user's `/init`-scaffolded **brainstorm → plan → execute** flow: `lifecycle/brainstorms/` (idea docs), `lifecycle/pending/plans/` (active plans), `lifecycle/archive/plans/` (executed plans).
+- **Read the plan from `lifecycle/pending/plans/<plan>.txt`** (or wherever the caller points).
+- **Archive on success.** The workflow you design MUST, as its FINAL step and ONLY when every phase passed, move the plan file `lifecycle/pending/plans/<plan>.txt → lifecycle/archive/plans/<plan>.txt` (e.g. a final `agent()` that performs the move and records the run outcome). If the build **halts/escalates, LEAVE the plan in `pending/`** — it isn't done. If the project has no `lifecycle/` tree, skip archiving.
+- Net: `pending/plans/` = "not yet built", `archive/plans/` = "built" — the flow is self-describing.
+
 ## Deliverable / handoff
 
 - **Write the script(s) to file(s)** — `~/.claude/workflows/<plan-slug>.js` for a single reusable plan, or `<plan-slug>-1-<group>.js`, `<plan-slug>-2-<group>.js`, … when split — and return the path(s) **in run order**.

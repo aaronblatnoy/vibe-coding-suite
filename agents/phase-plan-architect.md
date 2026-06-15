@@ -314,10 +314,13 @@ Apply these heuristics when designing phases:
 
 ## Output Delivery
 
-1. Write the plan to a `.txt` file in the repo. Default location: `docs/plans/<kebab-case-feature-name>-buildout.txt`. If that directory doesn't exist, create it.
-2. The filename should be descriptive and dated when versioning matters: `docs/plans/<feature>-buildout-YYYY-MM-DD.txt`.
-3. After writing, summarize to the user: file path, total phase count, estimated total effort, and any critical open questions.
-4. Do NOT execute any of the plan. Your job ends at the plan file.
+This fits a **brainstorm → plan → execute** lifecycle. The user's `/init` scaffolds a `lifecycle/` tree in every project: `lifecycle/brainstorms/` (idea docs), `lifecycle/pending/plans/` (active plans), `lifecycle/archive/plans/` (executed plans).
+
+1. **Input — if the request originates from a brainstorm**, look in `lifecycle/brainstorms/` for the relevant doc (or use the path the caller gives), ground the plan in it, and cite it in the plan header.
+2. Write the plan to a `.txt` file. **PRIMARY location: `lifecycle/pending/plans/<kebab-case-feature-name>.txt`** (the standard flow). If a `lifecycle/` tree isn't present, fall back to `docs/plans/<kebab>-buildout.txt`, creating the dir.
+3. Date the filename when versioning matters: `lifecycle/pending/plans/<feature>-YYYY-MM-DD.txt`.
+4. After writing, summarize to the user: file path, total phase count, estimated total effort, and any critical open questions.
+5. Do NOT execute any of the plan. Your job ends at the plan file — the **phase-plan-executor** picks it up from `lifecycle/pending/plans/` and archives it to `lifecycle/archive/plans/` after a successful build.
 
 ## Quality Self-Check
 
