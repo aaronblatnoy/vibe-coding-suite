@@ -50,6 +50,14 @@ Drives your running Safari browser from the terminal via `osascript` (AppleScrip
 
 ---
 
+### Annoying Compliance Officer
+
+A hawkish, detail-obsessed reviewer for how **sensitive data** is handled — PHI, PII, client/customer data, secrets. It inventories every place sensitive data is read, stored, transmitted, logged, or exposed to a third party, then returns a verdict — **APPROVE / APPROVE-WITH-CONDITIONS / BLOCK** — with concrete fixes. It leans strict (unsure = unsafe until proven) but is reasonable: it approves genuinely-safe patterns like local/on-box LLMs, BAA-covered destinations, correct de-identification, encryption, and IDs-only logs. It only reviews — it never modifies code or data, and it won't echo the sensitive values it reviews into its own report.
+
+**Invoke:** "Audit this feature for how it handles client data before I merge" or "we're about to send patient data to an external API — sign off on it?"
+
+---
+
 ## Workflows
 
 Workflows are multi-agent orchestration scripts that live in `~/.claude/workflows/`. They can fan out real, independent agents in parallel — not one model pretending to be many. Run them via the Workflow tool in Claude Code.
